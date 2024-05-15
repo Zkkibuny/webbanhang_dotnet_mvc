@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Shop Online";
+    ViewBag.SeoDescription = "Shop Online";
+}
+<link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
+<!-- Slider -->
+
+<div class="main_slider" style="background-image: url('../../content/assets/images/ntpmm.jpg'); ">
+    
+</div>
+
+
+<!-- New Arrivals -->
+
+<div class="new_arrivals">
+    <div class="container">
+        @Html.Action("MenuArrivals", "Menu")
+    </div>
+</div>
+
+<!-- Blogs -->
+@Html.Action("Partial_News_Home", "News")
